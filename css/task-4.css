@@ -1,0 +1,41 @@
+.login-form {
+  margin-top: 30px;
+}
+.login-form label {
+  margin-bottom: 8px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+}
+.login-form label:last-of-type {
+  margin-bottom: 16px;
+}
+input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding: 8px 16px;
+  color: #2e2f42;
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}
+input:hover,
+input:focus {
+  border: 1px solid #000000;
+}
+input:focus-visible {
+  outline: none;
+}

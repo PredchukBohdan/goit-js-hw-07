@@ -1,0 +1,71 @@
+#controls {
+  padding: 32px;
+  max-width: 486px;
+  margin: 0 auto;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+#controls button {
+  max-width: 120px;
+  width: 100%;
+}
+#controls button:last-of-type {
+  background-color: #ff4e4e;
+}
+#controls button:hover:last-of-type {
+  background-color: #ff7070;
+}
+#controls input {
+  border: 1px solid #808080;
+  flex-grow: 1;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 7px;
+  text-align: center;
+}
+#controls input:hover,
+#controls input:focus {
+  border: 1px solid #000000;
+}
+#controls input:focus-visible {
+  outline: none;
+}
+
+#boxes {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+  gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 486px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  opacity: 0;
+}
+@media screen and (max-width: 374px) {
+  #controls {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  #boxes {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  #controls button {
+    padding: 8px;
+  }
+  #controls input {
+    padding: 7px 4px;
+  }
+}

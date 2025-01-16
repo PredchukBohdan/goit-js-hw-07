@@ -1,0 +1,39 @@
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+#categories .item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+}
+#categories .item h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+#categories .item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+}
+#categories .item li:not(:last-child) {
+  margin-bottom: 8px;
+}
