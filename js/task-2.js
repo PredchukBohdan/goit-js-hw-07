@@ -30,11 +30,9 @@ const images = [
   const imagesArray = images.map((image) => {
     return `<li class="gallery-item"><img class="gallery-img" src="${image.url}" alt="${image.alt}"/></li>`;
   });
-  imagesArray?.forEach((image) => {
-    renderItems(image);
-  });
 
-  function renderItems(item) {
-    gallery.insertAdjacentHTML("afterbegin", item);
+  function renderItems(images) {
+    gallery.insertAdjacentHTML("afterbegin", images.join(""));
   }
+  renderItems(imagesArray);
 })();
